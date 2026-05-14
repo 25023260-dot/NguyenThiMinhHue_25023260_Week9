@@ -19,7 +19,7 @@ jobs:
           java-version: 17
 
       - name: Run Bai5 Verify
-        run: mvn -pl Bai5 verify
+        run: mvn -f Bai5/pom.xml clean verify
 
       - name: Upload JaCoCo Report
         uses: actions/upload-artifact@v4

@@ -22,4 +22,13 @@ public class CalculatorTest {
         Calculator c = new Calculator();
         assertEquals(1, c.subtract(3, 2));
     }
+    @Test
+    void testAdd2() {
+        assertEquals(5, new Calculator().add(2,3));
+    }
+
+    @Test
+    void testMultiply2() {
+        assertEquals(6, new Calculator().multiply(2,3));
+    }
 }

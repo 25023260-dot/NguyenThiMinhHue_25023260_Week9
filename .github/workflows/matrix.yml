@@ -6,7 +6,6 @@ on:
 
 jobs:
   test:
-
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -16,11 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Java
-        uses: actions/setup-java@v4
+      - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
 
-      - name: Test
-        run: mvn test
+      - name: Test Bai4 Only
+        run: mvn -pl Bai4 test

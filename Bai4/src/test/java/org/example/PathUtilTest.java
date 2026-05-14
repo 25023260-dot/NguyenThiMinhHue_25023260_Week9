@@ -10,6 +10,6 @@ public class PathUtilTest {
     void testPath() {
         String path = PathUtil.getPath();
 
-        assertTrue(path.contains("\\"));
+        assertTrue(path.endsWith("file.txt"));
     }
 }

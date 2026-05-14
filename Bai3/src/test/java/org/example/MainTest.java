@@ -11,8 +11,7 @@ class MainTest {
     }
 
     @Test
-    void testAddFailExample() {
-        // dùng để test CI fail (có thể xóa sau khi demo)
-        assertEquals(6, Main.add(2, 3));
+    void testAddExample() {
+        assertEquals(5, Main.add(2, 3));
     }
 }

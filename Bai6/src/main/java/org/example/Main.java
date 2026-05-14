@@ -2,13 +2,11 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello CI/CD Maven Project!");
+        System.out.println("CI/CD running successfully!");
 
-        int a = 5;
-        int b = 3;
+        int a = 10;
+        int b = 20;
 
-        int sum = a + b;
-
-        System.out.println("Sum = " + sum);
+        System.out.println("Sum = " + (a + b));
     }
 }
